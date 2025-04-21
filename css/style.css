@@ -1,0 +1,377 @@
+:root {
+  --blue: #2532b7;
+  --white: #fffcf5;
+  --black: #222;
+  --plantation-color: #2c4c50;
+  --border: 0.2rem solid var(--black);
+}
+
+* {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+*::selection {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--white);
+  border-radius: 5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 200px;
+  font-weight: 500;
+  height: 44px;
+  border: 0.4px solid var(--white);
+  background-color: transparent;
+  display: flex;
+  line-height: 100%;
+  padding: 0 26px;
+  width: auto;
+  align-items: center;
+  color: var(--white);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-green {
+  background-color: var(--plantation-color);
+}
+.pt-65 {
+  padding-top: 65px;
+}
+.pb-65 {
+  padding-bottom: 65px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+/* header area start */
+
+.header-area {
+  background-color: var(--blue);
+}
+.header-area:hover {
+  background-color: #fffcf5;
+  color: #313438;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+.header-menu ul li a {
+  display: inline-block;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.header-menu ul li:hover > a {
+  color: var(--blue);
+  transition: 0.3s;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-login a {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.header-btn {
+  margin-left: 30px;
+}
+
+.header-area:hover * {
+  color: #313438;
+  transition: color 0.3s;
+}
+
+.header-area:hover .get-btn {
+  background-color: #2532b7;
+  color: #fffcf5;
+}
+
+.header-area:hover .header-logo svg path {
+  fill: #2532b7;
+  transition: fill 0.3s;
+}
+
+/* header area end */
+
+/* email-marketing start */
+
+.email-marketing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: var(--blue);
+  border-top: 0.1px solid var(--white);
+}
+
+.content {
+  text-align: center;
+  max-width: 610px;
+}
+.marketing-pre-title img {
+  vertical-align: middle;
+  height: 21.5px;
+  width: 82.9px;
+}
+.content h1 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+.content h2 {
+  font-size: 60px;
+  font-family: "ivypresto-headline", serif;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.content p {
+  font-size: 17px;
+  font-style: normal;
+  line-height: 26px;
+  color: var(--white);
+  max-width: 629px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-demo {
+  color: var(--black);
+  background-color: var(--white);
+}
+.btn-free {
+  background-color: var(--blue);
+}
+
+/* email-marketing end */
+
+/* branding start */
+.branding-area {
+}
+.branding {
+  display: flex;
+}
+.branding-count {
+  flex-basis: 30%;
+  border-right: 1px solid var(--black);
+  padding-left: 50px;
+}
+.branding-count h2 {
+  font-size: 43px;
+}
+.branding-count p {
+  font-size: 13px;
+  max-width: 150px;
+}
+
+.branding-brand {
+  flex-basis: 70%;
+}
+.branding-brand img {
+  width: 100%;
+  height: auto;
+  padding-left: 150px;
+}
+/* branding end */
+
+/* number area start */
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cbf7dc;
+}
+
+.number {
+  padding-bottom: 60px;
+}
+
+.number h2 {
+  font-size: 72px;
+  color: #cbf7dc;
+}
+
+.number p {
+  font-size: 18px;
+  color: #cbf7dc;
+  max-width: 184px;
+}
+
+.numbers-content {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers-title h2 {
+  font-size: 38px;
+  font-family: "ivypresto-headline", serif;
+  color: #fff;
+}
+/* number area end */
+
+/* delivers area start */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h2 {
+  font-size: 47px;
+  font-family: "ivypresto-headline", serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title p {
+  font-size: 16px;
+  color: #313438;
+  max-width: 460px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delivers-content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  width: 1130px;
+  gap: 30px;
+  grid-template-areas:
+    "sideLeft sideRightTop"
+    "sideLeft sideRightBottom";
+}
+.block-1 {
+  grid-area: sideLeft;
+  background-color: #cbc5fb;
+  padding: 45px;
+  border-radius: 20px;
+}
+.btn.btn-bock-1 {
+    border: 0.4px solid #313438;
+    color: #313438;
+}
+.block-2 {
+  grid-area: sideRightTop;
+  background-color: #fad2c4;
+  display: flex;
+  padding: 45px;
+  border-radius: 20px;
+}
+.block-3 {
+  grid-area: sideRightBottom;
+  background-color: #c3ddff;
+  display: flex;
+  padding: 45px;
+  border-radius: 20px;
+}
+
+.block-1-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-1-top h3 {
+  font-size: 32px;
+  font-family: "ivypresto-headline", serif;
+  font-weight: 400;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+.block-1-top p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #313438;
+}
+.block-1-top a {
+  align-self: flex-start;
+}
+.block-1-bottom {
+  margin-top: 200px;
+}
+.block-1-bottom img {
+  width: 100%;
+  height: auto;
+}
+
+.block-left {
+  flex-basis: 60%;
+}
+.block-right {
+  flex-basis: 63%;
+}
+.block-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* delivers area end */
